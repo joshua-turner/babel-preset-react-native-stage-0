@@ -12,6 +12,14 @@ npm install babel-preset-react-native-stage-0 --save
 
 Just add a `.babelrc` file to your React Native project that looks like this:
 
+### RN (0.56+)
+```json5
+{
+  "presets": ["module:react-native-stage-0"]
+}
+```
+
+### RN (<0.56)
 ```json5
 {
   "presets": ["react-native-stage-0"]
@@ -20,6 +28,14 @@ Just add a `.babelrc` file to your React Native project that looks like this:
 
 Do you want/need experimental legacy decorator support (provided by [babel-plugin-transform-decorators-legacy](https://github.com/loganfsmyth/babel-plugin-transform-decorators-legacy))? Use this as your .babelrc instead:
 
+### RN (0.56+)
+```json5
+{
+  "presets": ["module:react-native-stage-0/decorator-support"]
+}
+```
+
+### RN (<0.56)
 ```json5
 {
   "presets": ["react-native-stage-0/decorator-support"]
